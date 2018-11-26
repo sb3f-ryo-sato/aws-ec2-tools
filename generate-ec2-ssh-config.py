@@ -2,7 +2,7 @@
 ##
 ## generate-ec2-ssh-config.py
 ##
-## EC2 — Boto 3 Docs 1.9.49 documentation
+## EC2 - Boto 3 Docs 1.9.49 documentation
 ## https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html
 ##
 import boto3
