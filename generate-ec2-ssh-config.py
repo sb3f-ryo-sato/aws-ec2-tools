@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 ##
 ## generate-ec2-ssh-config.py
 ##
@@ -11,7 +11,7 @@ client = boto3.client('ec2')
 
 response = client.describe_instances()
 for reservation in response['Reservations']:
-    for instance in sorted(reservation['Instances']):
+    for instance in reservation['Instances']:
         if instance['PublicDnsName'] == "":
             continue
 
