@@ -12,6 +12,8 @@ client = boto3.client('ec2')
 response = client.describe_instances()
 for reservation in response['Reservations']:
     for instance in reservation['Instances']:
+        if 'KeyName' not in instance:
+            continue
         if instance['PublicDnsName'] == "":
             continue
 
